@@ -207,7 +207,7 @@ nav h1 {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  transition: 2s;
+
   letter-spacing: 3px;
 }
 
@@ -345,11 +345,15 @@ footer a {
     'firstName lastName'
     'hours email'
     'input input'
-    'submit reset';
+    'btns btns';
   padding: 1rem;
   gap: 1rem;
 }
 
+.input__group label {
+  align-self: flex-start;
+  margin-left: 4.3rem;
+}
 .input__group {
   display: flex;
   flex-direction: column;
@@ -395,4 +399,38 @@ footer a {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.input__group__txtArea textarea {
+  padding: 1rem;
+}
+
+.form__btns {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  background-color: #7c3aed;
+  color: #ede9fe;
+  border: none;
+}
+
+.btns {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: btns;
+  gap: 10rem;
+}
+
+.adopt__gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  );
+}
+
+.gallery__item img {
+  width: 100%;
 }
