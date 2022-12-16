@@ -128,9 +128,8 @@ table {
   border-spacing: 0;
 }
 /* start of css */
-
-html {
-  font-size: 1em;
+* {
+  font-size: 1.3rem;
 }
 
 nav {
